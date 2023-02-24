@@ -1,0 +1,14 @@
+C:\Users\kjm72\Desktop\김종문\Repository\Thermal_imaging_camera\Thermal_imaging_camera\Thermal_imaging_camera\bin\Debug\Thermal_imaging_camera.exe.config
+C:\Users\kjm72\Desktop\김종문\Repository\Thermal_imaging_camera\Thermal_imaging_camera\Thermal_imaging_camera\bin\Debug\Thermal_imaging_camera.exe
+C:\Users\kjm72\Desktop\김종문\Repository\Thermal_imaging_camera\Thermal_imaging_camera\Thermal_imaging_camera\bin\Debug\Thermal_imaging_camera.pdb
+C:\Users\kjm72\Desktop\김종문\Repository\Thermal_imaging_camera\Thermal_imaging_camera\Thermal_imaging_camera\obj\Debug\Thermal_imaging_camera.csproj.AssemblyReference.cache
+C:\Users\kjm72\Desktop\김종문\Repository\Thermal_imaging_camera\Thermal_imaging_camera\Thermal_imaging_camera\obj\Debug\Thermal_imaging_camera.csproj.SuggestedBindingRedirects.cache
+C:\Users\kjm72\Desktop\김종문\Repository\Thermal_imaging_camera\Thermal_imaging_camera\Thermal_imaging_camera\obj\Debug\Thermal_imaging_camera.Form1.resources
+C:\Users\kjm72\Desktop\김종문\Repository\Thermal_imaging_camera\Thermal_imaging_camera\Thermal_imaging_camera\obj\Debug\Thermal_imaging_camera.Properties.Resources.resources
+C:\Users\kjm72\Desktop\김종문\Repository\Thermal_imaging_camera\Thermal_imaging_camera\Thermal_imaging_camera\obj\Debug\Thermal_imaging_camera.csproj.GenerateResource.cache
+C:\Users\kjm72\Desktop\김종문\Repository\Thermal_imaging_camera\Thermal_imaging_camera\Thermal_imaging_camera\obj\Debug\Thermal_imaging_camera.csproj.CoreCompileInputs.cache
+C:\Users\kjm72\Desktop\김종문\Repository\Thermal_imaging_camera\Thermal_imaging_camera\Thermal_imaging_camera\obj\Debug\Thermal_imaging_camera.exe
+C:\Users\kjm72\Desktop\김종문\Repository\Thermal_imaging_camera\Thermal_imaging_camera\Thermal_imaging_camera\obj\Debug\Thermal_imaging_camera.pdb
+C:\Users\kjm72\Desktop\김종문\Repository\Thermal_imaging_camera\Thermal_imaging_camera\Thermal_imaging_camera\bin\Debug\NModbus4.dll
+C:\Users\kjm72\Desktop\김종문\Repository\Thermal_imaging_camera\Thermal_imaging_camera\Thermal_imaging_camera\bin\Debug\NModbus4.xml
+C:\Users\kjm72\Desktop\김종문\Repository\Thermal_imaging_camera\Thermal_imaging_camera\Thermal_imaging_camera\obj\Debug\Thermal_imaging_camera.csproj.CopyComplete
