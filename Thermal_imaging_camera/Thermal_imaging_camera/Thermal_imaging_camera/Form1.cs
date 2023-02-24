@@ -23,6 +23,8 @@ namespace Thermal_imaging_camera
     {
         
         Header DeviceSetting = new Header();
+        LOG LogSetting = new LOG();
+
         public bool blsTemp;
         public int nTemp;
         public const int BAUDRATE = 9600;
@@ -45,9 +47,13 @@ namespace Thermal_imaging_camera
             {
                 Monitor.Enter(tbDebug);
                 tbDebug.Text = "";
+                LogSetting.CreateLogFile("초기화 진행중...");
                 Monitor.Exit(tbDebug);
             }
+            LogSetting.CreateLogFile("초기화 완료");
             MessageBox.Show("초기화 완료");
+            
+            
             button2.Enabled = !blsFlag1;
         }
         #endregion
@@ -58,7 +64,7 @@ namespace Thermal_imaging_camera
             blsFlag1 = !blsFlag1;
             //DeviceSetting.Thread_Start();
             button2.Enabled = !blsFlag1;
-
+            LogSetting.CreateLogFile("자료수신 쓰레드 생성 완료");
             Thread DisplayThread = new Thread(bWorking);
             DisplayThread.Start();
         }
@@ -75,7 +81,7 @@ namespace Thermal_imaging_camera
             port.PortName = DeviceSetting.strPortName;
             port.BaudRate = BAUDRATE;
             Thread.Sleep(100);
-                     
+            LogSetting.CreateLogFile("데이터 수신 준비 완료");
             port.Open();
             while (blsFlag1) 
             {
@@ -84,7 +90,15 @@ namespace Thermal_imaging_camera
                 {
                     this.Invoke(new MethodInvoker(delegate () 
                     {
+                        string strTemp;
+                        DeviceSetting.cntData++;
+                        if (DeviceSetting.cntData == 520)
+                        {
+                            tbDebug.Text += "\r\n";
+                        }
                         tbDebug.Text += string.Format("{0:X2}", nReceiveData);
+                        strTemp = tbDebug.Text;
+                        LogSetting.ReceiveData(strTemp);
                     }));
                 }
                 
@@ -104,6 +118,7 @@ namespace Thermal_imaging_camera
             try
             {
                 port.Write(tbDebug_Send.Text);
+                LogSetting.CreateLogFile("데이터 송신중.. 송신내용 : "+ tbDebug_Send.Text);
             }
             catch (Exception)
             {
