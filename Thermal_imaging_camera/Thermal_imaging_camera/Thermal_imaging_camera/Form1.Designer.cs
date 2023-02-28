@@ -28,13 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.button1 = new System.Windows.Forms.Button();
             this.tbDebug = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.tbDebug_Send = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.ChRecv = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.GUI_Timer = new System.Windows.Forms.Timer(this.components);
+            this.tbDisplay = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ChRecv)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -83,20 +91,65 @@
             this.tbDebug_Send.Size = new System.Drawing.Size(432, 88);
             this.tbDebug_Send.TabIndex = 5;
             // 
-            // pictureBox1
+            // ChRecv
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(13, 303);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(431, 280);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            chartArea6.Name = "ChartArea1";
+            this.ChRecv.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.ChRecv.Legends.Add(legend6);
+            this.ChRecv.Location = new System.Drawing.Point(12, 289);
+            this.ChRecv.Name = "ChRecv";
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.ChRecv.Series.Add(series6);
+            this.ChRecv.Size = new System.Drawing.Size(568, 300);
+            this.ChRecv.TabIndex = 6;
+            this.ChRecv.Text = "chart1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(467, 353);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 12);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(467, 380);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 12);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "label1";
+            // 
+            // GUI_Timer
+            // 
+            this.GUI_Timer.Tick += new System.EventHandler(this.GUI_Timer_Tick);
+            // 
+            // tbDisplay
+            // 
+            this.tbDisplay.Location = new System.Drawing.Point(586, 14);
+            this.tbDisplay.Multiline = true;
+            this.tbDisplay.Name = "tbDisplay";
+            this.tbDisplay.Size = new System.Drawing.Size(766, 415);
+            this.tbDisplay.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 595);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(1578, 802);
+            this.Controls.Add(this.tbDisplay);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ChRecv);
             this.Controls.Add(this.tbDebug_Send);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -104,7 +157,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ChRecv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,7 +170,11 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox tbDebug_Send;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart ChRecv;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer GUI_Timer;
+        private System.Windows.Forms.TextBox tbDisplay;
     }
 }
 
