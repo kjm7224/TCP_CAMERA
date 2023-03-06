@@ -1,0 +1,11 @@
+C:\Users\kjm72\Desktop\김종문\Repository\WATSerailcom\WATSerialcom\WATSerialcom\bin\Debug\WATSerialcom.exe.config
+C:\Users\kjm72\Desktop\김종문\Repository\WATSerailcom\WATSerialcom\WATSerialcom\bin\Debug\WATSerialcom.exe
+C:\Users\kjm72\Desktop\김종문\Repository\WATSerailcom\WATSerialcom\WATSerialcom\bin\Debug\WATSerialcom.pdb
+C:\Users\kjm72\Desktop\김종문\Repository\WATSerailcom\WATSerialcom\WATSerialcom\obj\Debug\WATSerialcom.csproj.AssemblyReference.cache
+C:\Users\kjm72\Desktop\김종문\Repository\WATSerailcom\WATSerialcom\WATSerialcom\obj\Debug\WATSerialcom.csproj.SuggestedBindingRedirects.cache
+C:\Users\kjm72\Desktop\김종문\Repository\WATSerailcom\WATSerialcom\WATSerialcom\obj\Debug\WATSerialcom.Properties.Resources.resources
+C:\Users\kjm72\Desktop\김종문\Repository\WATSerailcom\WATSerialcom\WATSerialcom\obj\Debug\WATSerialcom.csproj.GenerateResource.cache
+C:\Users\kjm72\Desktop\김종문\Repository\WATSerailcom\WATSerialcom\WATSerialcom\obj\Debug\WATSerialcom.csproj.CoreCompileInputs.cache
+C:\Users\kjm72\Desktop\김종문\Repository\WATSerailcom\WATSerialcom\WATSerialcom\obj\Debug\WATSerialcom.exe
+C:\Users\kjm72\Desktop\김종문\Repository\WATSerailcom\WATSerialcom\WATSerialcom\obj\Debug\WATSerialcom.pdb
+C:\Users\kjm72\Desktop\김종문\Repository\WATSerailcom\WATSerialcom\WATSerialcom\obj\Debug\WATSerialcom.main.resources
